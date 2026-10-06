@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Farhan & Dr. Zareen — Engagement Invitation</title>
+<meta name="description" content="You're invited to celebrate the engagement of Dr. Farhan Lateefi & Dr. Zareen Basri.">
+<meta name="theme-color" content="#24050D">
+<meta property="og:title" content="Dr. Farhan & Dr. Zareen — Engagement Invitation">
+<meta property="og:description" content="You're invited to celebrate the engagement of Dr. Farhan Lateefi & Dr. Zareen Basri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#24050D;--mar:#4A0B18;--mar2:#641426;--wine:#300711;--gold:#C9A45C;--gold2:#E0C98A;--ivory:#F7F0DF;
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif;--ew:min(90vw,420px);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{margin:0;background:var(--bg);color:var(--ivory);font-family:var(--sans);overflow-x:hidden}
+body.locked{overflow:hidden;height:100%;touch-action:none}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.06;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.serif{font-family:var(--serif)}
+.gold{color:var(--gold2)}
+/* ---------- scene ---------- */
+.scene{position:relative;height:100dvh;min-height:520px;display:grid;place-items:center;overflow:hidden;
+background:radial-gradient(ellipse at 50% 40%,#7a1a2d 0%,var(--mar) 38%,var(--bg) 80%),var(--bg)}
+.scene::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.55));pointer-events:none}
+.stage{perspective:1600px;position:relative;z-index:2;width:100%;display:grid;place-items:center}
+.tilt{transition:transform .25s ease-out;transform-style:preserve-3d}
+.float{animation:float 5s ease-in-out infinite;transform-style:preserve-3d}
+@keyframes float{50%{transform:translateY(-6px)}}
+.opened .float{animation:none}
+.rig{position:relative;width:var(--ew);aspect-ratio:1.45/1;transform-style:preserve-3d;font-size:calc(var(--ew)*.04);
+transition:transform 1.1s cubic-bezier(.5,0,.3,1)}
+body.s1 .rig{transform:rotateX(14deg)}
+body.s3 .rig{transform:none}
+.env{position:absolute;inset:0;transform-style:preserve-3d;transition:transform 1.2s cubic-bezier(.6,0,.35,1),opacity .7s ease .6s}
+body.s3 .env{transform:translate3d(0,85vh,0) rotateX(-12deg);opacity:0}
+.eback{position:absolute;inset:0;background:#3a0914;border-radius:3px;box-shadow:0 34px 50px rgba(0,0,0,.6),0 6px 12px rgba(0,0,0,.5)}
+.pocket{position:absolute;inset:0;transform:translateZ(4px);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);
+background:linear-gradient(180deg,#8f2236,#6c1527)}
+.pocket::before,.pocket::after{content:"";position:absolute;inset:0}
+.pocket::before{background:rgba(0,0,0,.14);clip-path:polygon(0 0,50% 57%,0 100%)}
+.pocket::after{background:rgba(255,255,255,.07);clip-path:polygon(100% 0,50% 57%,100% 100%)}
+.flap{position:absolute;left:0;right:0;top:0;height:57%;transform-origin:top center;transform-style:preserve-3d;
+transform:translateZ(6px);transition:transform 1.1s cubic-bezier(.5,0,.3,1)}
+body.s1 .flap{transform:translateZ(1px) rotateX(-180deg)}
+.ff,.fb{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 100%);-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.ff{background:linear-gradient(180deg,#a3283d,#7e1b2e)}
+.fb{background:linear-gradient(180deg,#2e0710,#4a0b18);transform:rotateX(180deg)}
+.seal{position:absolute;left:50%;top:57%;width:14%;aspect-ratio:1;border-radius:50%;
+background:radial-gradient(circle at 35% 30%,#f0dba0,var(--gold) 55%,#8a6a2c);box-shadow:0 3px 8px rgba(0,0,0,.6),inset 0 0 0 .22em #00000020;
+transform:translate3d(-50%,-50%,8px);transition:transform 1s cubic-bezier(.5,0,1,.6),opacity .5s ease .5s;display:grid;place-items:center;color:#6b4a14;font-size:1.3em}
+body.s1 .seal{transform:translate3d(-170%,300%,8px) rotate(-90deg);opacity:0}
+.letter{position:absolute;left:5%;right:5%;top:7%;bottom:7%;transform:translate3d(0,0,2px);
+transition:transform 1.2s cubic-bezier(.6,0,.3,1);transform-origin:center}
+body.s2 .letter{transform:translate3d(0,-36%,2px)}
+body.s3 .letter{transform:translate3d(0,0,2px) scale(var(--fs,1))}
+.paper{background:linear-gradient(135deg,#fbf5e6,var(--ivory) 60%,#eadfc3);color:var(--mar);box-shadow:0 14px 34px rgba(0,0,0,.5),0 3px 8px rgba(0,0,0,.4)}
+.frame{position:absolute;inset:.6em;border:1px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:.5em;gap:.2em}
+.frame::before{content:"";position:absolute;inset:3px;border:1px solid #c9a45c66;pointer-events:none}
+.corner{position:absolute;width:2.4em;height:2.4em;color:var(--gold)}
+.corner.tl{top:-1px;left:-1px}.corner.tr{top:-1px;right:-1px;transform:scaleX(-1)}
+.corner.bl{bottom:-1px;left:-1px;transform:scaleY(-1)}.corner.br{bottom:-1px;right:-1px;transform:scale(-1)}
+.lbl{font-size:.68em;letter-spacing:.3em;text-transform:uppercase;color:var(--gold2);margin:0}
+.paper .lbl{color:#8a6a2c}
+.names{font-family:var(--serif);font-size:1.75em;line-height:1.05;color:var(--mar);font-weight:400;margin:.1em 0}
+.amp{font-family:var(--serif);font-style:italic;color:#a8802f;font-size:1em;display:block}
+.sm{font-size:.82em;line-height:1.5;color:#5b2a33;margin:0;font-family:var(--sans)}
+.hit{position:absolute;inset:0;z-index:10;background:none;border:0;cursor:pointer;transform:translateZ(30px)}
+.rig{cursor:pointer}body.opened .rig{cursor:default}
+.hit:focus-visible{outline:2px solid var(--gold2);outline-offset:8px}
+.cue{position:absolute;bottom:calc(6dvh + env(safe-area-inset-bottom,0px));z-index:3;text-align:center;transition:opacity .6s}
+.cue .lbl{animation:pulse 2.4s ease-in-out infinite;display:block;font-size:11px}
+.chev{width:16px;height:10px;display:block;margin:6px auto 0;color:var(--gold);animation:bob 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}@keyframes bob{50%{transform:translateY(5px)}}
+.opened .cue.tap{opacity:0;pointer-events:none}
+.cue.scroll{opacity:0;pointer-events:none}
+.opened.done .cue.scroll{opacity:1}
+body.instant *{transition:none!important}
+/* ---------- sections ---------- */
+main{position:relative;z-index:1}
+section{position:relative;padding:clamp(72px,14vw,120px) 24px;text-align:center;
+background:linear-gradient(180deg,var(--bg),var(--mar) 50%,var(--bg))}
+section.alt{background:linear-gradient(180deg,var(--bg),var(--wine) 50%,var(--bg))}
+.wrap{max-width:560px;margin:0 auto}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,8vw,44px);letter-spacing:.06em;margin:14px 0;color:var(--ivory);text-transform:uppercase}
+p{line-height:1.8;color:#e9dcc3;font-size:16px;margin:12px 0}
+.msg{font-family:var(--serif);font-style:italic;font-size:clamp(20px,5.4vw,26px);line-height:1.6;color:var(--ivory)}
+.div{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:18px auto;max-width:260px}
+.div::before,.div::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold))}
+.div::after{transform:scaleX(-1)}
+.div svg{width:22px;height:22px;flex:none}
+.det{display:grid;gap:26px;margin-top:30px}
+.det b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(26px,7vw,34px);color:var(--gold2);margin-top:6px}
+.cd{display:flex;gap:10px;justify-content:center;margin-top:36px}
+.cd div{flex:1;max-width:84px;border:1px solid #c9a45c66;padding:14px 4px 10px;background:#ffffff08}
+.cd strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(28px,8vw,38px);color:var(--ivory)}
+.cd span{font-size:9px;letter-spacing:.24em;color:var(--gold)}
+.btn{display:inline-block;margin-top:22px;padding:15px 30px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;
+letter-spacing:.24em;font-size:12px;text-transform:uppercase;background:linear-gradient(180deg,#c9a45c1f,#c9a45c08);transition:all .3s;font-weight:500}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:var(--wine);outline:none}
+.pin{width:38px;height:52px;display:block;color:var(--gold);margin:0 auto}
+.fin{min-height:80dvh;display:grid;place-items:center;background:var(--bg)}
+.fin .names{font-size:clamp(32px,9vw,52px)}
+.fin h2{font-size:clamp(20px,5.5vw,30px);line-height:1.5}
+.music{position:fixed;right:max(14px,env(safe-area-inset-right,0px));top:calc(14px + env(safe-area-inset-top,0px));z-index:50;width:44px;height:44px;border-radius:50%;
+border:1px solid var(--gold);background:#24050Dcc;color:var(--gold2);cursor:pointer;font-size:18px;display:none}
+.music.on{opacity:1}.music.off{opacity:.55}
+.rv{opacity:0;transform:translateY(30px);filter:blur(6px);transition:all 1s ease;transition-delay:calc(var(--i,0)*.12s)}
+.rv.in{opacity:1;transform:none;filter:none}
+.hidden{display:none!important}
+@media(min-width:760px){:root{--ew:min(60vw,520px)}.det{grid-template-columns:repeat(3,1fr)}.wrap{max-width:760px}}
+@media(prefers-reduced-motion:reduce){
+.float,.cue .lbl,.chev{animation:none}.tilt{transition:none}
+.rig,.env,.flap,.seal,.letter{transition-duration:.4s!important;transition-delay:0s!important}
+.rv{transform:none;filter:none;transition-duration:.4s}}
+</style>
+</head>
+<body class="locked">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="cn" viewBox="0 0 40 40"><path d="M2 2h22M2 2v22" stroke="currentColor" fill="none" stroke-width="1.2"/><path d="M8 8c8 0 14 6 14 14-8 0-14-6-14-14zM8 8c0 8 6 14 14 14" stroke="currentColor" fill="none" stroke-width="1"/><circle cx="8" cy="8" r="2" fill="currentColor"/></symbol>
+<symbol id="fl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="2.4"/><path d="M12 9.6C9 5 11 2 12 2s3 3 0 7.600zM14.400 12C19 9 22 11 22 12s-3 3-7.600 0zM12 14.400C15 19 13 22 12 22s-3-3 0-7.600zM9.600 12C5 15 2 13 2 12s3-3 7.600 0z"/></g></symbol>
+<symbol id="pn" viewBox="0 0 24 32"><path d="M12 30S3 19 3 11a9 9 0 0118 0c0 8-9 19-9 19z" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="11" r="3.500" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+<symbol id="cv" viewBox="0 0 16 10"><path d="M1 1l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+</defs></svg>
+
+<button class="music" id="music" aria-label="Toggle music">♫</button>
+
+<header class="scene" id="scene">
+  <div class="stage"><div class="tilt" id="tilt"><div class="float"><div class="rig" id="rig">
+    <div class="letter paper" id="letter"><div class="frame">
+      <svg class="corner tl" aria-hidden="true"><use href="#cn"/></svg><svg class="corner tr" aria-hidden="true"><use href="#cn"/></svg>
+      <svg class="corner bl" aria-hidden="true"><use href="#cn"/></svg><svg class="corner br" aria-hidden="true"><use href="#cn"/></svg>
+      <p class="lbl">Lateefi Family invites you to</p>
+      <h1 class="names"><span data-b="n1"></span><span class="amp">&amp;</span><span data-b="n2"></span></h1>
+      <div class="div" style="margin:.4em auto;max-width:8em"><svg aria-hidden="true"><use href="#fl"/></svg></div>
+      <p class="lbl" data-b="title"></p>
+      <p class="sm" data-b="when"></p>
+    </div></div>
+    <div class="env"><div class="eback"></div><div class="pocket"></div>
+      <div class="flap"><div class="ff"></div><div class="fb"></div></div>
+      <div class="seal" aria-hidden="true">&#10086;</div></div>
+    <button class="hit" id="open" aria-label="Open the invitation"></button>
+  </div></div></div></div>
+  <div class="cue tap"><span class="lbl">Tap to Open</span><svg class="chev" aria-hidden="true"><use href="#cv"/></svg></div>
+  <div class="cue scroll"><span class="lbl">Scroll to explore</span><svg class="chev" aria-hidden="true"><use href="#cv"/></svg></div>
+</header>
+
+<main id="main" aria-hidden="false">
+  <section><div class="wrap">
+    <p class="lbl rv" style="color:var(--gold)">✦</p>
+    <h2 class="rv" style="--i:1" data-b="mHead"></h2>
+    <div class="div rv" style="--i:2"><svg aria-hidden="true"><use href="#fl"/></svg></div>
+    <p class="msg rv" style="--i:3" data-b="mBody"></p>
+  </div></section>
+
+  <section class="alt"><div class="wrap">
+    <p class="lbl rv" style="color:var(--gold)">Save the date</p>
+    <h2 class="rv" style="--i:1" data-b="title"></h2>
+    <div class="det">
+      <div class="rv" style="--i:2"><span class="lbl" style="color:var(--gold)">Day</span><b data-b="day"></b></div>
+      <div class="rv" style="--i:3"><span class="lbl" style="color:var(--gold)">Date</span><b data-b="date"></b></div>
+      <div class="rv" style="--i:4"><span class="lbl" style="color:var(--gold)">Time</span><b data-b="time"></b></div>
+    </div>
+    <div class="cd rv hidden" id="cd" style="--i:5" aria-live="off">
+      <div><strong id="cd-d">00</strong><span>DAYS</span></div><div><strong id="cd-h">00</strong><span>HOURS</span></div>
+      <div><strong id="cd-m">00</strong><span>MINS</span></div><div><strong id="cd-s">00</strong><span>SECS</span></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <p class="lbl rv" style="color:var(--gold)">The Venue</p>
+    <h2 class="rv" style="--i:1" data-b="vName"></h2>
+    <div class="div rv" style="--i:2"><svg aria-hidden="true"><use href="#fl"/></svg></div>
+    <p class="rv" style="--i:3" data-b="vAddr"></p>
+    <p class="rv serif gold" style="--i:4;font-size:22px" data-b="vCity"></p>
+  </div></section>
+
+  <section class="alt hidden" id="mapSec"><div class="wrap">
+    <svg class="pin rv" aria-hidden="true"><use href="#pn"/></svg>
+    <p class="lbl rv" style="--i:1;color:var(--gold);margin-top:14px">Find Us</p>
+    <h2 class="rv" style="--i:2" data-b="vName"></h2>
+    <p class="rv" style="--i:3" data-b="vAddr"></p>
+    <a class="btn rv" style="--i:4" id="mapBtn" target="_blank" rel="noopener noreferrer">Get Directions</a>
+  </div></section>
+
+  <section><div class="wrap">
+    <p class="lbl rv" style="color:var(--gold)">Kindly reply</p>
+    <h2 class="rv" style="--i:1">RSVP</h2>
+    <div class="div rv" style="--i:2"><svg aria-hidden="true"><use href="#fl"/></svg></div>
+    <p class="rv" style="--i:3">We would be delighted to celebrate this special occasion with you.</p>
+    <a class="btn rv hidden" style="--i:4" id="waBtn" target="_blank" rel="noopener noreferrer">Confirm Your Presence</a>
+  </div></section>
+
+  <section class="fin"><div class="wrap">
+    <svg width="30" height="30" style="color:var(--gold)" class="rv" aria-hidden="true"><use href="#fl"/></svg>
+    <h2 class="rv" style="--i:1">Your presence will make our celebration even more special</h2>
+    <div class="div rv" style="--i:2"><svg aria-hidden="true"><use href="#fl"/></svg></div>
+  </div></section>
+</main>
+
+<script>
+/* ============ EDIT YOUR DETAILS HERE ============ */
+const invitationData = {
+  couple: { name1: "Dr. Farhan Lateefi", name2: "Dr. Zareen Basri", initials: "F & Z" },
+  event: { title: "Engagement Ceremony", day: "Sunday", date: "11th October 2026",
+           dateTime: "2026-10-11T21:30:00", time: "9:30 PM" },
+  message: { heading: "With Joy in Our Hearts",
+    body: "With immense joy and happiness, we invite you to be a part of our special celebration as we begin a beautiful new chapter together." },
+  venue: { name: "S.S Banquet",
+    address: "Above Red Rose Mart, Moin Bagh, Hasnabad, Edi Bazaar",
+    city: "Hyderabad, Telangana", mapsUrl: "https://share.google/WZJwW2dume9Vv20Fv" },
+  rsvp: { whatsappNumber: "", message: "" },   // e.g. "919876543210" (country code, no +)
+  media: { music: "" }                          // e.g. "/audio/engagement.mp3"
+};
+/* ================================================== */
+const D = invitationData, $ = s => document.querySelector(s), body = document.body;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const map = { with:"With joy in our hearts", n1:D.couple.name1, n2:D.couple.name2, initials:D.couple.initials,
+  invite:"request the pleasure of your company", when:D.event.day+" · "+D.event.date+" · "+D.event.time,
+  where:D.venue.name+", "+D.venue.city, title:D.event.title, day:D.event.day, date:D.event.date, time:D.event.time,
+  mHead:D.message.heading, mBody:D.message.body, vName:D.venue.name, vAddr:D.venue.address, vCity:D.venue.city };
+document.querySelectorAll('[data-b]').forEach(e => e.textContent = map[e.dataset.b] || '');
+document.title = D.couple.name1 + " & " + D.couple.name2 + " — Engagement Invitation";
+
+if (D.venue.mapsUrl) { $('#mapBtn').href = D.venue.mapsUrl; $('#mapSec').classList.remove('hidden'); }
+if (D.rsvp.whatsappNumber) {
+  const m = D.rsvp.message || `Hello! I would love to attend the engagement ceremony of ${D.couple.name1} & ${D.couple.name2}.`;
+  const n = D.rsvp.whatsappNumber.replace(/\D/g,'');
+  $('#waBtn').href = `https://wa.me/${n}?text=${encodeURIComponent(m)}`; $('#waBtn').classList.remove('hidden');
+}
+
+/* countdown */
+const target = new Date(D.event.dateTime || '');
+if (!isNaN(target)) {
+  $('#cd').classList.remove('hidden');
+  const p = n => String(n).padStart(2,'0');
+  const tick = () => { let t = Math.max(0, target - Date.now()); const s = Math.floor(t/1000);
+    $('#cd-d').textContent = p(Math.floor(s/86400)); $('#cd-h').textContent = p(Math.floor(s%86400/3600));
+    $('#cd-m').textContent = p(Math.floor(s%3600/60)); $('#cd-s').textContent = p(s%60); return t > 0; };
+  if (tick()) { const id = setInterval(() => { if (!tick()) clearInterval(id); }, 1000); }
+}
+
+/* scroll reveal */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .15 });
+document.querySelectorAll('.rv').forEach(e => io.observe(e));
+
+/* always start at the envelope on load/reload */
+try { history.scrollRestoration = 'manual'; } catch (e) {}
+scrollTo(0, 0);
+addEventListener('pageshow', e => { if (e.persisted) location.reload(); });
+
+/* fit the letter to the screen once the envelope drops away */
+const letter = $('#letter');
+function fit() {
+  const rig = $('#rig'), lw = rig.offsetWidth * .9, lh = rig.offsetHeight * .86;
+  letter.style.setProperty('--fs', Math.max(1, Math.min(1.5, innerWidth * .94 / lw, innerHeight * .6 / lh)));
+}
+fit(); addEventListener('resize', fit);
+
+/* music */
+let audio = null; const mb = $('#music');
+if (D.media.music) {
+  audio = new Audio(D.media.music); audio.loop = true; audio.volume = .5;
+  audio.addEventListener('error', () => { mb.style.display = 'none'; audio = null; });
+  mb.style.display = 'block'; mb.classList.add('off');
+  mb.onclick = () => { if (!audio) return; if (audio.paused) { audio.play().catch(()=>{}); mb.className = 'music on'; } else { audio.pause(); mb.className = 'music off'; } mb.style.display = 'block'; };
+}
+
+/* envelope opening: tap -> flap lifts + seal drops -> letter slides out -> envelope falls away */
+function finish() { body.classList.remove('locked'); body.classList.add('done'); }
+function openCard(instant) {
+  body.classList.add('opened'); $('#open').classList.add('hidden');
+  if (instant) { body.classList.add('instant', 's1', 's2', 's3'); finish(); requestAnimationFrame(() => body.classList.remove('instant')); return; }
+  const k = reduce ? .4 : 1;
+  body.classList.add('s1');
+  setTimeout(() => body.classList.add('s2'), 1000 * k);
+  setTimeout(() => body.classList.add('s3'), 2200 * k);
+  setTimeout(finish, 3500 * k);
+  if (audio) audio.play().then(() => { mb.className = 'music on'; mb.style.display = 'block'; }).catch(()=>{});
+}
+const go = () => { if (!body.classList.contains('opened')) openCard(false); };
+/* leaving the page (app switch / tab hidden) closes the envelope again for the next visit */
+let linkAt = 0;
+document.addEventListener('click', e => { if (e.target.closest('a.btn')) linkAt = Date.now(); });
+function resetEnvelope() {
+  body.classList.add('instant');
+  body.classList.remove('opened', 'done', 's1', 's2', 's3');
+  body.classList.add('locked');
+  $('#open').classList.remove('hidden');
+  scrollTo(0, 0);
+  if (audio) { audio.pause(); audio.currentTime = 0; mb.className = 'music off'; }
+  void body.offsetWidth;
+  requestAnimationFrame(() => requestAnimationFrame(() => body.classList.remove('instant')));
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden' && body.classList.contains('opened') && Date.now() - linkAt > 2500) resetEnvelope();
+});
+addEventListener('pagehide', () => { if (Date.now() - linkAt > 2500) resetEnvelope(); });
+$('#open').addEventListener('click', go);
+$('#rig').addEventListener('click', go);
+$('#scene').addEventListener('click', e => { if (e.target.closest('.cue.tap')) go(); });
+
+/* desktop pointer tilt (closed only) */
+if (!reduce && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+  const t = $('#tilt');
+  addEventListener('pointermove', e => { if (body.classList.contains('opened')) { t.style.transform = ''; return; }
+    const x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5;
+    t.style.transform = `rotateY(${x*10}deg) rotateX(${-y*8}deg)`; });
+}
+</script>
+</body>
+</html>
